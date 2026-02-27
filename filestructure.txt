@@ -4,25 +4,80 @@
 |-- package-lock.json
 |-- package.json
 |-- public
+    |-- favicon.png
+    |-- og-default.png
+    |-- robots.txt
     |-- vite.svg
 |-- README.md
 |-- src
     |-- App.jsx
     |-- assets
         |-- images
+            |-- 8hourHero.webp
+            |-- await1.webp
+            |-- await2.webp
+            |-- await3.webp
+            |-- await4.webp
+            |-- culinary.webp
+            |-- detailedPricing1.webp
+            |-- detailedPricing2.webp
+            |-- detailedPricing3.webp
+            |-- detailedPricing4.webp
+            |-- fullday-mobile-hero.webp
             |-- fullday1.webp
             |-- fullday2.webp
             |-- fullday3.webp
+            |-- gallery1.webp
+            |-- gallery2.webp
+            |-- gallery3.webp
+            |-- gallery4.webp
+            |-- gallery5.webp
+            |-- gallery6.webp
+            |-- gallery7.webp
+            |-- gallery8.webp
+            |-- gallery9.webp
             |-- hero.webp
+            |-- hero2.webp
+            |-- hero3.webp
+            |-- highlight1.webp
+            |-- highlight2.webp
+            |-- highlight3.webp
+            |-- highlight4.webp
+            |-- hovergallery1.webp
+            |-- hovergallery2.webp
+            |-- hovergallery3.webp
+            |-- hovergallery4.webp
             |-- imgOne.webp
             |-- imgThree.webp
             |-- imgTwo.webp
             |-- index.js
+            |-- mobile-hero.webp
             |-- ownthemoment.webp
+            |-- pricingFour.webp
+            |-- pricingHero.webp
+            |-- pricingOne.webp
+            |-- pricingThree.webp
+            |-- pricingTwo.webp
+            |-- sportingClays.webp
+            |-- waterToy1.webp
+            |-- waterToy2.webp
+            |-- waterToy3.webp
+            |-- waterToyPackage1.webp
+            |-- waterToyPackage2.webp
         |-- react.svg
         |-- videos
-            |-- videoSrc.MP4
+            |-- videoSrc.mp4
     |-- components
+        |-- Footer.jsx
+        |-- FullDayExp
+            |-- DiningAndCulinaryOptions.jsx
+            |-- EightHourHeading.jsx
+            |-- FullDayExperienceHero.jsx
+            |-- SportingClaysExperience.jsx
+            |-- WaterActivitiesHeading.jsx
+            |-- WaterToyPackages.jsx
+            |-- WaterToys.jsx
+            |-- WhatAwaitsYou.jsx
         |-- Home
             |-- FullDayExperience.jsx
             |-- GallerySection.jsx
@@ -31,8 +86,28 @@
             |-- SevenDayExperience.jsx
             |-- SpecsSection.jsx
             |-- VideoSection.jsx
+        |-- Navbar.jsx
+        |-- Pricing
+            |-- DetailedCharterPricing.jsx
+            |-- ElevateYourExperience.jsx
+            |-- PricingCards.jsx
+            |-- PricingHero.jsx
+            |-- PricingNotes.jsx
+        |-- SevenDayExp
+            |-- GalleryToggle.jsx
+            |-- Highlights.jsx
+            |-- SevenDayHeading.jsx
+            |-- SevenDayHero.jsx
+            |-- SevenDayPricing.jsx
     |-- index.css
     |-- main.jsx
     |-- pages
+        |-- FullDayExp.jsx
         |-- Home.jsx
+        |-- Pricing.jsx
+        |-- SevenDayExp.jsx
+    |-- seo
+        |-- SEO.jsx
+        |-- siteMeta.js
+|-- vercel.json
 |-- vite.config.js
