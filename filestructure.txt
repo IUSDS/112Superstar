@@ -1,0 +1,38 @@
+|-- .gitignore
+|-- eslint.config.js
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- public
+    |-- vite.svg
+|-- README.md
+|-- src
+    |-- App.jsx
+    |-- assets
+        |-- images
+            |-- fullday1.webp
+            |-- fullday2.webp
+            |-- fullday3.webp
+            |-- hero.webp
+            |-- imgOne.webp
+            |-- imgThree.webp
+            |-- imgTwo.webp
+            |-- index.js
+            |-- ownthemoment.webp
+        |-- react.svg
+        |-- videos
+            |-- videoSrc.MP4
+    |-- components
+        |-- Home
+            |-- FullDayExperience.jsx
+            |-- GallerySection.jsx
+            |-- Hero.jsx
+            |-- OwnTheMoment.jsx
+            |-- SevenDayExperience.jsx
+            |-- SpecsSection.jsx
+            |-- VideoSection.jsx
+    |-- index.css
+    |-- main.jsx
+    |-- pages
+        |-- Home.jsx
+|-- vite.config.js

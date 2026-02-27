@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@400;500;600;700&family=Kanit:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+/* No whitespace around the app */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #fff;
+  font-family: "Kanit", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings default to Genos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Genos", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Optional helper classes (use in className) */
+.font-body { font-family: "Kanit", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+.font-heading { font-family: "Genos", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
