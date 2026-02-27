@@ -14,7 +14,7 @@ const DEFAULT_SERVICES = [
 
 const DEFAULT_CONTACT = [
   { label: "(941) 304-5789", href: "tel:+19413045789" },
-  { label: "charter@superstar.com", href: "mailto:charter@superstar.com" },
+  { label: "charter@superstar.com", href: "mailto:info@kokomocharters.com" },
   { label: "Sarasota, Florida", href: "#location" },
 ];
 
