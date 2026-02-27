@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import videoSrc from "../../assets/videos/videoSrc.MP4";
+import videoSrc from "../../assets/videos/videoSrc.mp4";
 import { hero } from "../../assets/images";
 
 export default function VideoSection() {
