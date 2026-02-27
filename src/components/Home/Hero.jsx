@@ -33,7 +33,7 @@ export default function HeroSection() {
                 SUPERSTAR
               </h1>
 
-              <p className="lux-reveal-delay2 mt-2 italic font-body text-2xl uppercase drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:text-[45px]">
+              <p className="mt-2 sm:mt-3 lux-reveal-delay2 italic font-body text-2xl uppercase drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:text-[45px]">
                 ON FLORIDA&apos;S GULF COAST
               </p>
             </div>

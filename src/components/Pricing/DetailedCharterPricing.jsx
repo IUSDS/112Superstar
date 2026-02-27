@@ -15,6 +15,7 @@ const DEFAULT_ITEMS = [
       "Premium onboard amenities",
     ],
     cta: "BOOK NOW",
+    href: "https://fareharbor.com/embeds/book/kokomocharters/items/685237/calendar/2026/02/?full-items=yes&back=https://www.kokomocharters.com/&flow=1520892&g4=yes",
     imageSrc: detailedPricing1,
     imageAlt: "Half Day Charter",
   },
@@ -30,6 +31,7 @@ const DEFAULT_ITEMS = [
       "Full-service crew experience",
     ],
     cta: "BOOK NOW",
+    href: "https://fareharbor.com/embeds/book/kokomocharters/items/684564/calendar/2026/02/?full-items=yes&back=https://www.kokomocharters.com/&flow=1520892&g4=yes",
     imageSrc: detailedPricing2,
     imageAlt: "Day Charter",
   },
@@ -46,6 +48,7 @@ const DEFAULT_ITEMS = [
       "Premium food and beverage service",
     ],
     cta: "BOOK NOW",
+    href: "https://fareharbor.com/embeds/book/kokomocharters/items/683982/calendar/2026/02/?flow=1520892&full-items=yes&back=https://www.kokomocharters.com/&g4=yes",
     imageSrc: detailedPricing3,
     imageAlt: "Full Day Charter",
   },
@@ -63,6 +66,7 @@ const DEFAULT_ITEMS = [
       "Full professional crew",
     ],
     cta: "BOOK NOW",
+    href: "tel:+19413045789",
     imageSrc: detailedPricing4,
     imageAlt: "Multi-Day Experience",
   },
@@ -155,15 +159,15 @@ export default function DetailCharterPricing({
                           </ul>
 
                           <div className="mt-9 max-w-[38rem] border-b border-white/10 pb-6">
-                            <button
-                              type="button"
-                              className="group inline-flex items-center gap-3 font-body text-xl font-semibold uppercase tracking-[0.28em] text-white"
+                            <a
+                              href={item.href}
+                              className="group inline-flex items-center gap-3 font-body text-xl font-medium uppercase  bg-[white] px-8 py-4 rounded-xl text-[#0A2540]"
                             >
                               {item.cta}
                               <span className="transition-transform duration-200 group-hover:translate-x-1">
                                 →
                               </span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                       )}
@@ -200,15 +204,15 @@ export default function DetailCharterPricing({
                           </ul>
 
                           <div className="mt-9 max-w-[38rem] border-b border-white/10 pb-6">
-                            <button
-                              type="button"
-                              className="group inline-flex items-center gap-3 font-body text-xl font-semibold uppercase tracking-[0.28em] text-white"
+                            <a
+                              href={item.href}
+                              className="group inline-flex items-center gap-3 font-body text-xl font-medium uppercase bg-[white] px-8 py-4 rounded-xl text-[#0A2540]"
                             >
                               {item.cta}
                               <span className="transition-transform duration-200 group-hover:translate-x-1">
                                 →
                               </span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                       ) : (

@@ -14,7 +14,7 @@ const PRICING_PACKAGES = [
       "Swim, lounge, unwind",
       "Private floating resort experience",
     ],
-    cta: { label: "BOOK HALF DAY", href: "#https://fareharbor.com/embeds/book/kokomocharters/items/685237/calendar/2026/02/?full-items=yes&back=https://www.kokomocharters.com/&flow=1520892&g4=yes"},
+    cta: { label: "BOOK HALF DAY", href: "https://fareharbor.com/embeds/book/kokomocharters/items/685237/calendar/2026/02/?full-items=yes&back=https://www.kokomocharters.com/&flow=1520892&g4=yes"},
   },
   {
     eyebrow: "BEST VALUE",
@@ -29,7 +29,7 @@ const PRICING_PACKAGES = [
       "Settle into the day’s rhythm",
       "Polished five-star service",
     ],
-    cta: { label: "BOOK DAY CHARTER", href: "#https://fareharbor.com/embeds/book/kokomocharters/items/684564/calendar/2026/02/?full-items=yes&back=https://www.kokomocharters.com/&flow=1520892&g4=yes" },
+    cta: { label: "BOOK DAY CHARTER", href: "https://fareharbor.com/embeds/book/kokomocharters/items/684564/calendar/2026/02/?full-items=yes&back=https://www.kokomocharters.com/&flow=1520892&g4=yes" },
   },
   {
     eyebrow: "ALL INCLUSIVE EXPERIENCE",

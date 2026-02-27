@@ -81,7 +81,7 @@ export default function WaterToyPackages({
                       {pkg.lines.map((line, i) => (
                         <p
                           key={i}
-                          className="font-body text-[18px] sm:text-xl md:text-lg lg:text-[22px] font-normal uppercase italic text-white/90"
+                          className="font-body text-[20px] sm:text-xl md:text-lg lg:text-[22px] font-normal uppercase italic text-white/90"
                         >
                           {line}
                         </p>

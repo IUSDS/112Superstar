@@ -2,7 +2,7 @@ import { imgOne, imgThree, imgTwo } from "../../assets/images";
 
 export default function SevenDayExperience() {
   return (
-    <section className="w-full bg-white pb-12 pt-12">
+    <section id="sevenDayExperience" className="w-full bg-white pb-12 pt-12">
       <div className="mx-auto max-w-[96rem] px-6 sm:px-10 lg:px-16">
         <div className="relative overflow-hidden bg-[#0A2540] py-6  lg:py-18">
           {/* Corner cutouts (clip-path to avoid hairline borders on mobile) */}

@@ -38,13 +38,13 @@ export default function SportingClaysExperience({
 
                 ].join(" ")}
               >
-                <p className="whitespace-pre-line font-heading text-3xl sm:text-3xl lg:text-4xl font-medium uppercase italic lg:ml-3">
+                <p className="text-center md:text-left whitespace-pre-line font-heading text-3xl sm:text-3xl lg:text-4xl font-medium uppercase italic lg:ml-3">
                   {leftTitle}
                 </p>
               </div>
 
               {/* Right heading */}
-              <div className="w-full md:w-auto md:text-right md:col-start-2 md:row-start-1 md:justify-self-end">
+              <div className="text-center md:text-left w-full md:w-auto md:text-right md:col-start-2 md:row-start-1 md:justify-self-end">
                 <p className="whitespace-pre-line font-heading text-2xl sm:text-3xl lg:text-4xl ml-3 md:ml-0 font-semibold uppercase italic leading-[1.05] tracking-[0.14em] text-[#0A2540]">
                   {rightTitle}
                 </p>

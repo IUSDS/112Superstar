@@ -8,11 +8,11 @@ export default function OwnTheMoment() {
           {/* Headings (mobile: 1st, desktop: left/top) */}
           <div className="order-1 text-center lg:col-start-1 lg:order-1 lg:text-left">
             <h2 className="text-[#0A2540]">
-              <span className="font-body block text-[32px] sm:text-4xl lg:text-5xl">
+              <span className="font-body block text-[25px] sm:text-4xl lg:text-[42px]">
                 Own the Moment Aboard the
               </span>
 
-              <span className="mt-3 block font-heading text-[45px] font-semibold sm:text-6xl lg:text-[4.5rem]">
+              <span className="block leading-[3rem] sm:mt-12 sm:leading-0 font-heading text-[50px] font-semibold sm:text-6xl lg:text-[4.9rem]">
                 112&rsquo; <span>SUPERSTAR</span>
               </span>
             </h2>
@@ -45,7 +45,7 @@ export default function OwnTheMoment() {
               defined by space, balance, and ease.
             </p>
 
-            <div className="mt-10">
+            <div className="mt-10 sm:mt-20">
               <a
                 href="https://fareharbor.com/embeds/book/kokomocharters/items/?flow=1520892&language=en-us&full-items=yes&back=https://www.kokomocharters.com/&g4=yes"
                 className="inline-flex items-center justify-center rounded-md bg-[#0A2540] px-10 py-4 font-body text-sm font-medium uppercase tracking-[0.22em] text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-[#0A2540]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A2540]/35"

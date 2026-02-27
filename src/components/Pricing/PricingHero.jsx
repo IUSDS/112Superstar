@@ -14,7 +14,7 @@ export default function PricingHero() {
           decoding="async"
           loading="eager"
           sizes="100vw"
-          className="absolute inset-0 h-full w-full object-cover object-bottom object-[52%_60%] sm:object-[52%_58%] lg:object-[52%_56%]"
+          className="absolute inset-0 h-full w-full object-cover"
         />
 
         {/* Top centered heading */}
@@ -24,7 +24,7 @@ export default function PricingHero() {
               <span className="block text-4xl font-medium leading-[0.95] sm:text-5xl lg:text-6xl">
                 Choose Your
               </span>
-              <span className="mt-1 block text-5xl font-semibold leading-[0.95] sm:mt-2 sm:text-6xl lg:text-7xl">
+              <span className="block text-5xl font-semibold leading-[0.6] sm:text-6xl lg:text-7xl">
                 Superstar Experience
               </span>
             </h1>
