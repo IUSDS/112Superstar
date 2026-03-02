@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import videoSrc from "../../assets/videos/videoSrc.mp4";
 import { hero } from "../../assets/images";
+
+const S3_VIDEO_URL =
+  "https://kyc-public-resources.s3.us-east-1.amazonaws.com/KYC+Superstar+Sunset+Cruise+1926.mp4";
+
 
 export default function VideoSection() {
   const sectionRef = useRef(null);
@@ -100,7 +103,7 @@ export default function VideoSection() {
                     setIsPlaying(false);
                   }}
                 >
-                  {shouldLoadVideo ? <source src={videoSrc} type="video/mp4" /> : null}
+                  {shouldLoadVideo ? <source src={S3_VIDEO_URL} type="video/mp4" /> : null}
                 </video>
               </div>
             </div>

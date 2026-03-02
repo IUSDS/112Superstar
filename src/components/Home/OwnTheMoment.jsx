@@ -31,6 +31,10 @@ export default function OwnTheMoment() {
                   alt="Superstar yacht cruising"
                   loading="lazy"
                   decoding="async"
+                 // IMPORTANT: set these to the *actual* pixel size of ownthemoment.webp
+                  // so the reserved aspect-ratio matches and CLS drops.
+                  width={1920}
+                  height={1080}
                   className="h-auto w-full object-cover transition-transform duration-500 hover:scale-[1.02]"
                 />
               </div>

@@ -29,7 +29,7 @@ export default function HeroSection() {
                 THE ULTIMATE
               </p>
 
-              <h1 className="lux-reveal-delay italic font-heading text-6xl font-semibold uppercase leading-[0.6] drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:text-7xl lg:text-9xl">
+              <h1 className="lux-reveal italic font-heading text-6xl font-semibold uppercase leading-[0.6] drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:text-7xl lg:text-9xl">
                 SUPERSTAR
               </h1>
 
