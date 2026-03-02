@@ -183,13 +183,12 @@ export default function Navbar({
             menuOpen ? "max-h-[420px] opacity-100" : "max-h-0 opacity-0",
           ].join(" ")}
         >
-          <div
-            className={[
-              "rounded-[14px] pb-6",
-              scrolled
-                ? "bg-white/92 backdrop-blur-xl ring-1 ring-[#0A2540]/10"
-                : "bg-white/10 backdrop-blur-xl ring-1 ring-white/15",
-            ].join(" ")}
+            <div
+              className={[
+                "rounded-[14px] pb-6",
+                "bg-white backdrop-blur-xl ring-1",
+                scrolled ? "ring-[#0A2540]/10" : "ring-white/15",
+              ].join(" ")}
           >
             <nav className="flex flex-col gap-2 px-1 pt-2" aria-label="Mobile">
               {links.map((l) => (
@@ -202,7 +201,7 @@ export default function Navbar({
                     "transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2",
                     scrolled
                       ? "text-[#0A2540]/90 hover:bg-[#0A2540]/5 focus-visible:ring-[#0A2540]/25"
-                      : "text-white/92 hover:bg-white/10 focus-visible:ring-white/40",
+                      : "text-[#0A2540]/90 hover:bg-white/10 focus-visible:ring-white/40",
                   ].join(" ")}
                 >
                   {l.label}
@@ -214,7 +213,7 @@ export default function Navbar({
                 target="_blank"
                 onClick={() => setMenuOpen(false)}
                 className={[
-                  "mt-2 inline-flex h-[40px] items-center justify-center rounded-[12px] px-6",
+                  "mt-2 mx-6 inline-flex h-[40px] items-center justify-center rounded-[12px] px-6",
                   "font-body text-[12px] font-semibold uppercase tracking-[0.22em]",
                   "ring-1 transition-opacity duration-150 hover:opacity-90",
                   "focus-visible:outline-none focus-visible:ring-2",
