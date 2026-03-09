@@ -54,7 +54,7 @@ const DEFAULT_ITEMS = [
   },
   {
     title: "Multi-Day Experience",
-    durationPrice: "2–7 DAYS · EXCLUSIVE PRICE · $67,999",
+    durationPrice: "2–7 DAYS · EXCLUSIVE PRICE · $20,000",
     description:
       "Step into a world where time slows down and every detail is tailored to you. Explore hidden islands, waterfront destinations, and private beaches — all aboard a floating five-star retreat.",
     bullets: [
