@@ -10,6 +10,8 @@ import DiningAndCulinaryOptions from "../components/FullDayExp/DiningAndCulinary
 import { SITE_URL } from "../seo/siteMeta";
 import { SEO } from "../seo/SEO";
 import { useLocation } from "react-router-dom";
+import AllInclusiveEscape from "../components/FullDayExp/AllInclusiveEscape";
+import AquabanaPackage from "../components/FullDayExp/AquabanaPackage";
 
 const fulldayJsonLd = {
   "@context": "https://schema.org",
@@ -221,6 +223,8 @@ const FullDayExp = () => {
       <div className="w-full">
         <FullDayExperienceHero />
         <EightHourHeading />
+        <AllInclusiveEscape />
+        <AquabanaPackage />
         <WhatAwaitsYou />
         <WaterActivitiesHeading />
         <WaterToysSection />

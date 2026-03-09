@@ -3,13 +3,6 @@ import { await1, await2, await3, await4 } from "../../assets/images";
 
 const DEFAULT_ITEMS = [
   {
-    title: "FULL BEACH CLUB SETUP",
-    description:
-      "Jet Skis, Seabobs And Aquabana Beach Setup To Create Your Own Aquatic Playground.",
-    image: await1,
-    alt: "Beach club setup on the water",
-  },
-  {
     title: "FULL PROFESSIONAL CREW",
     description: "Captain, Dedicated Mate, And Attentive Stewardess.",
     image: await2,
@@ -33,7 +26,7 @@ const DEFAULT_ITEMS = [
 
 export default function WhatAwaitsYou({
   items = DEFAULT_ITEMS,
-  heading = "WHAT AWAITS YOU",
+  heading = "What Awaits You On Your Full Day Experience",
 }) {
   return (
     <section className="w-full bg-white">
@@ -51,16 +44,12 @@ export default function WhatAwaitsYou({
 
           {/* Heading */}
           <div className="relative">
-            <div className="flex items-center justify-center md:justify-start pt-8">
-              <p className="font-body text-3xl font-medium uppercase italic text-[#FFC93F] ml-0 md:ml-8 sm:text-5xl lg:text-5xl">
+            <div className="flex items-center justify-center md:justify-center pt-8">
+              <p className="font-heading text-3xl font-medium uppercase italic text-[#FFC93F] ml-0 md:ml-8 sm:text-5xl lg:text-5xl">
                 {heading}
               </p>
 
               {/* Dashed line continues right on desktop */}
-            </div>
-            <div className="flex mt-3 flex w-full max-w-[420px] sm:max-w-[450px] ml-0 sm:ml-10 lg:max-w-[700px] items-center gap-4">
-              <div className="h-px flex-1 bg-white/55" />
-              <div className="h-px w-[300px] border-t border-dashed border-white" />
             </div>
           </div>
 
