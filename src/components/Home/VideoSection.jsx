@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { hero } from "../../assets/images";
 
 const S3_VIDEO_URL =
-  "https://kyc-public-resources.s3.us-east-1.amazonaws.com/KYC+Superstar+Sunset+Cruise+1926.mp4";
+  "https://kyc-public-resources.s3.us-east-1.amazonaws.com/superstar_edited.mp4";
 
 
 export default function VideoSection() {
