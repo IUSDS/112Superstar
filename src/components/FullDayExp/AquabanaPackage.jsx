@@ -178,7 +178,7 @@ export default function AquabanaPackage({
         </div>
 
         <div className="mt-8 w-full border-y border-[#0A2540]/20 px-4 py-4 sm:mt-10 sm:px-6 sm:py-5 lg:py-6">
-          <p className="mx-auto max-w-[84rem] text-center font-heading text-[22px] leading-[1.2] font-medium italic text-[#0A2540] sm:text-[24px] md:text-[26px] lg:text-[32px]">
+          <p className="mx-auto max-w-[84rem] text-center uppercase font-heading text-[22px] leading-[1.2] font-medium italic text-[#0A2540] sm:text-[24px] md:text-[26px] lg:text-[32px]">
             {bottomBannerText}
           </p>
         </div>
