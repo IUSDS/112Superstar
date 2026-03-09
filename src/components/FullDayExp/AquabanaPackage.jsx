@@ -79,20 +79,22 @@ export default function AquabanaPackage({
               </p>
             </div>
 
-            <div className="mt-auto pt-10">
-              <p className="font-heading text-center text-[20px] leading-[1.02] font-medium italic text-white">
+           <div className="mt-auto pt-10">
+            <p className="font-heading text-center text-[20px] leading-[1.02] font-medium italic text-white">
                 {leftText}
-              </p>
+            </p>
 
-              <p className="mt-10 font-heading text-center text-[20px] leading-[1.02] font-medium italic text-white">
+            <div className="mx-auto mt-7 h-px w-[74%] bg-white/70" />
+
+            <p className="mt-7 font-heading text-center text-[20px] leading-[1.02] font-medium italic text-white">
                 {rightText}
-              </p>
+            </p>
 
-              <div className="mx-auto mt-7 h-px w-[74%] bg-white/45" />
+            <div className="mx-auto mt-7 h-px w-[74%] bg-white/70" />
 
-              <p className="mt-7 font-heading text-center text-[20px] leading-[0.98] font-medium italic text-white">
+            <p className="mt-7 font-heading text-center text-[20px] leading-[0.98] font-medium italic text-white">
                 {bottomBannerText}
-              </p>
+            </p>
             </div>
           </div>
         </div>
