@@ -45,7 +45,7 @@ export default function WhatAwaitsYou({
           {/* Heading */}
           <div className="relative">
             <div className="flex items-center justify-center md:justify-center pt-8">
-              <p className="font-heading text-3xl font-medium uppercase italic text-[#FFC93F] ml-0 md:ml-8 sm:text-5xl lg:text-5xl">
+              <p className="font-heading text-3xl font-medium uppercase italic text-[#FFC93F] ml-0 md:ml-8 sm:text-5xl lg:text-5xl text-center">
                 {heading}
               </p>
 
