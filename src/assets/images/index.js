@@ -48,6 +48,11 @@ import detailedPricing2 from "./detailedPricing2.webp"
 import detailedPricing3 from "./detailedPricing3.webp"
 import detailedPricing4 from "./detailedPricing4.webp"
 import EighthourHero from "./8hourHero.webp"
+import inclusiveEscapeJetSki from "./inclusiveEscapeJetSki.webp"
+import inclusiveEscapeSeabob from "./inclusiveEscapeSeabob.webp"
+import inclusiveEscapeBeachClub from "./inclusiveEscapeBeachClub.webp"
+import aquabanaPackage from "./aquabanaPackage.webp"
+import aquabanaPackageMobile from "./aquabanaPackageMobile.webp"
 
 
 export {
@@ -104,6 +109,14 @@ export {
     pricingTwo,
     pricingThree,
     pricingFour,
+
+    //8-Hour Full Day Inclusive
+    inclusiveEscapeBeachClub,
+    inclusiveEscapeSeabob,
+    inclusiveEscapeJetSki,
+
+    aquabanaPackage,
+    aquabanaPackageMobile,
 
     //8-Hour Await Section
     await1,
