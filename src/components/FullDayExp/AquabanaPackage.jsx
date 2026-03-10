@@ -145,22 +145,13 @@ export default function AquabanaPackage({
               </div>
 
               <div className="absolute bottom-6 right-6 z-10 w-[36%] max-w-[380px] text-right text-white lg:bottom-8 lg:right-8 lg:w-[34%] lg:max-w-[460px]">
-                <p className="font-body text-[34px] leading-[0.78] font-medium lg:text-[42px]">
-                  Available on{" "}
-                  <span className="font-heading text-[44px] font-semibold italic lg:text-[60px]">
-                    8 Hour
-                  </span>
-                  <br />
-                  and{" "}
-                  <span className="font-heading text-[44px] font-semibold italic lg:text-[60px]">
-                    6 Hour
-                  </span>{" "}
-                  Charters
+                <p className="font-heading italic text-[34px] leading-[0.48] font-medium lg:text-[48px]">
+                EXCLUSIVE PRICING
                 </p>
 
-                <div className="ml-auto mt-3 h-[2px] w-full bg-white/95 lg:mt-5" />
+                <div className="ml-auto mt-3 h-[2px] w-[50%] bg-white/95 lg:mt-5" />
 
-                <p className="mt-3 font-heading text-[64px] leading-none font-medium italic lg:text-[78px]">
+                <p className="font-heading text-[64px] leading-none font-medium italic lg:text-[78px]">
                   {price}
                 </p>
               </div>
@@ -168,32 +159,32 @@ export default function AquabanaPackage({
           </div>
 
           <div className="mt-8 border-y border-[#0A2540]/20 sm:mt-10 lg:mt-12">
-            <div className="grid grid-cols-[3fr_auto_2fr] items-stretch">
-              <div className="px-1 py-6 md:px-0 md:pr-8 lg:pr-10 lg:py-8">
-                <p className="font-heading text-center text-[20px] leading-[1.12] font-medium italic text-[#0A2540] lg:text-[28px] md:text-left">
-                  {leftText}
-                </p>
-              </div>
+  <div className="grid grid-cols-[3fr_auto_2fr] items-stretch">
+    <div className="flex h-full items-center px-1 py-6 md:px-0 md:pr-8 lg:pr-10 lg:py-8">
+      <p className="w-full font-heading text-center text-[20px] leading-[1.12] font-medium italic text-[#0A2540] lg:text-[28px] md:text-left">
+        {leftText}
+      </p>
+    </div>
 
-              <div className="w-px self-stretch bg-[#0A2540]/25" />
+    <div className="w-px self-stretch bg-[#0A2540]/25" />
 
-              <div className="px-1 py-6 md:pl-8 lg:pl-10 lg:py-8">
-                <div className="flex h-full flex-col">
-                  <div className="w-full bg-[#0A2540] px-4 py-2.5">
-                    <p className="font-heading text-center text-[20px] leading-[1.12] font-medium uppercase italic text-[#FFC93F] lg:text-[28px]">
-                      {rightTextHighlight}
-                    </p>
-                  </div>
+    <div className="h-full px-1 py-6 md:pl-8 lg:pl-0 lg:py-0">
+      <div className="flex h-full flex-col">
+        <div className="w-full bg-[#0A2540] px-4 py-2.5">
+          <p className="font-heading text-center text-[20px] leading-[1.12] font-medium uppercase italic text-[#FFC93F] lg:text-[28px]">
+            {rightTextHighlight}
+          </p>
+        </div>
 
-                  <div className="flex-1 px-2 pt-4">
-                    <p className="font-heading text-center text-[20px] leading-[1.12] font-medium italic text-[#0A2540] lg:text-[28px]">
-                      {rightTextBody}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-1 items-center justify-center px-3 py-4">
+          <p className="w-full font-heading text-center text-[20px] leading-[1.12] font-medium italic text-[#0A2540] lg:text-[26px]">
+            {rightTextBody}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
 
         <div className="mt-8 w-full border-y border-[#0A2540]/20 px-4 py-4 sm:mt-10 sm:px-6 sm:py-5 lg:py-6">
