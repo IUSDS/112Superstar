@@ -226,9 +226,9 @@ const FullDayExp = () => {
         <AllInclusiveEscape />
         <AquabanaPackage />
         <WhatAwaitsYou />
-        <WaterActivitiesHeading />
+        {/* <WaterActivitiesHeading />
         <WaterToysSection />
-        <WaterToyPackages />
+        <WaterToyPackages /> */}
         <SportingClaysExperience />
         <DiningAndCulinaryOptions />
       </div>

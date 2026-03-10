@@ -11,9 +11,10 @@ export default function AquabanaPackage({
   mobileImage = aquabanaPackageMobile,
   imageAlt = "Aquabana beach party package floating on clear blue water",
   packageTitle = "AQUABANA BEACH\nPARTY PACKAGE",
-  price = "$1495",
+  price = "$495",
   leftText = "Turn The Back Of The Yacht Into A Massive Floating Lounge. This Setup Expands Your Deck Space Right Onto The Water With A Shaded Partybana Cabana Lounger, And A Stable Platform For Diving, Splashing, And Endless Water Fun.",
-  rightText = "Amp Up The Adventure! For An Additional Price, Add Jet Skis, SeaBobs, Or E-Foils To Your Experience And Take Your Day On The Water To The Next Level!",
+  rightTextHighlight = "AMP UP THE ADVENTURE!",
+  rightTextBody = "For An Additional Price, Add Jet Skis, SeaBobs, Or E-Foils To Your Experience And Take Your Day On The Water To The Next Level!",
   bottomBannerText = "The Yacht Is Just The Beginning, This Is How You Own The Day.",
 }) {
   return (
@@ -79,22 +80,30 @@ export default function AquabanaPackage({
               </p>
             </div>
 
-           <div className="mt-auto pt-10">
-            <p className="font-heading text-center text-[20px] leading-[1.02] font-medium italic text-white">
+            <div className="mt-auto pt-10">
+              <p className="font-heading text-center text-[20px] leading-[1.02] font-medium italic text-white">
                 {leftText}
-            </p>
+              </p>
 
-            <div className="mx-auto mt-7 h-px w-[74%] bg-white/70" />
+              <div className="mx-auto mt-7 h-px w-[74%] bg-white/70" />
 
-            <p className="mt-7 font-heading text-center text-[20px] leading-[1.02] font-medium italic text-white">
-                {rightText}
-            </p>
+              <div className="mt-7">
+                <div className="w-full bg-[#0A2540] px-3 py-2.5">
+                  <p className="font-heading text-center text-[20px] leading-[1.02] font-medium uppercase italic text-[#FFC93F]">
+                    {rightTextHighlight}
+                  </p>
+                </div>
 
-            <div className="mx-auto mt-7 h-px w-[74%] bg-white/70" />
+                <p className="mt-5 font-heading text-center text-[20px] leading-[1.02] font-medium italic text-white">
+                  {rightTextBody}
+                </p>
+              </div>
 
-            <p className="mt-7 font-heading text-center text-[20px] leading-[0.98] font-medium italic text-white">
+              <div className="mx-auto mt-7 h-px w-[74%] bg-white/70" />
+
+              <p className="mt-7 font-heading text-center text-[20px] leading-[0.98] font-medium italic text-white">
                 {bottomBannerText}
-            </p>
+              </p>
             </div>
           </div>
         </div>
@@ -169,9 +178,19 @@ export default function AquabanaPackage({
               <div className="w-px self-stretch bg-[#0A2540]/25" />
 
               <div className="px-1 py-6 md:pl-8 lg:pl-10 lg:py-8">
-                <p className="font-heading text-center text-[20px] leading-[1.12] font-medium italic text-[#0A2540] lg:text-[28px]">
-                  {rightText}
-                </p>
+                <div className="flex h-full flex-col">
+                  <div className="w-full bg-[#0A2540] px-4 py-2.5">
+                    <p className="font-heading text-center text-[20px] leading-[1.12] font-medium uppercase italic text-[#FFC93F] lg:text-[28px]">
+                      {rightTextHighlight}
+                    </p>
+                  </div>
+
+                  <div className="flex-1 px-2 pt-4">
+                    <p className="font-heading text-center text-[20px] leading-[1.12] font-medium italic text-[#0A2540] lg:text-[28px]">
+                      {rightTextBody}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

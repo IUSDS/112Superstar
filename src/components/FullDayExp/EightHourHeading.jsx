@@ -5,7 +5,7 @@ export default function EightHourHeading() {
         <div className="flex flex-col gap-5 py-6 md:flex-row md:items-end md:justify-between md:gap-10 md:py-8">
           {/* Left heading */}
           <p className="mx-auto  text-center font-body text-xl font-medium uppercase italic  text-[#0A2540] sm:text-2xl md:mx-0 md:max-w-none md:text-left md:text-3xl lg:text-4xl md:whitespace-nowrap">
-            BRINGING THE CARIBBEAN <br className="hidden md:block" /> TO THE SARASOTA BAY
+            ALL-IN ULTIMATE <br className="hidden md:block" /> FULL-DAY LUXURY PACKAGE 
           </p>
 
           {/* Right heading (blue panel only on mobile) */}

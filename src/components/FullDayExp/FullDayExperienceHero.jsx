@@ -51,21 +51,21 @@ export default function FullDayExperienceHero() {
           {/* Mobile heading (matches Home Hero typography style) */}
           <div className="mx-auto max-w-2xl text-center sm:hidden">
             <p className="lux-reveal font-body text-2xl uppercase mt-8 drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)]">
-              ALL-IN ULTIMATE
+             BRINGING THE CARIBBEAN
             </p>
 
             <h1 className="lux-reveal-delay italic font-heading text-7xl font-semibold uppercase  drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)]">
-              FULL-DAY
+              TO THE
             </h1>
 
             <p className="lux-reveal-delay2 mt-3 font-body text-2xl uppercase drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)]">
-              LUXURY PACKAGE
+              SARASOTA BAY
             </p>
           </div>
 
           {/* Desktop heading (UNCHANGED) */}
           <h1 className="hidden text-center font-heading text-[22px] font-semibold italic uppercase text-white/95 sm:block sm:text-[28px] lg:text-6xl">
-            ALL-IN ULTIMATE FULL-DAY LUXURY PACKAGE
+            BRINGING THE CARIBBEAN TO THE SARASOTA BAY
           </h1>
         </div>
 
