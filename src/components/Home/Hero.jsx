@@ -25,15 +25,15 @@ export default function HeroSection() {
           <div className="mx-auto w-full max-w-8xl sm:px-10 lg:px-16 pb-24 sm:pb-12">
             {/* Center on mobile, left on desktop */}
             <div className="mx-auto max-w-2xl text-center sm:mx-0 sm:text-left">
-              <p className="lux-reveal italic font-body text-2xl uppercase drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:text-[45px]">
+              <p className="italic font-body text-2xl uppercase drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:text-[45px]">
                 THE ULTIMATE
               </p>
 
-              <h1 className="lux-reveal italic font-heading text-6xl font-semibold uppercase leading-[0.6] drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:text-7xl lg:text-9xl">
+              <h1 className="italic font-heading text-6xl font-semibold uppercase leading-[0.6] drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:text-7xl lg:text-9xl">
                 SUPERSTAR
               </h1>
 
-              <p className="mt-2 sm:mt-3 lux-reveal-delay2 italic font-body text-2xl uppercase drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:text-[45px]">
+              <p className="mt-2 sm:mt-3 italic font-body text-2xl uppercase drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:text-[45px]">
                 ON FLORIDA&apos;S GULF COAST
               </p>
             </div>
