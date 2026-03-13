@@ -14,6 +14,8 @@
     |-- assets
         |-- images
             |-- 8hourHero.webp
+            |-- aquabanaPackage.webp
+            |-- aquabanaPackageMobile.webp
             |-- await1.webp
             |-- await2.webp
             |-- await3.webp
@@ -50,6 +52,9 @@
             |-- imgOne.webp
             |-- imgThree.webp
             |-- imgTwo.webp
+            |-- inclusiveEscapeBeachClub.webp
+            |-- inclusiveEscapeJetSki.webp
+            |-- inclusiveEscapeSeabob.webp
             |-- index.js
             |-- mobile-hero.webp
             |-- ownthemoment.webp
@@ -66,10 +71,11 @@
             |-- waterToyPackage2.webp
         |-- react.svg
         |-- videos
-            |-- videoSrc.mp4
     |-- components
         |-- Footer.jsx
         |-- FullDayExp
+            |-- AllInclusiveEscape.jsx
+            |-- AquabanaPackage.jsx
             |-- DiningAndCulinaryOptions.jsx
             |-- EightHourHeading.jsx
             |-- FullDayExperienceHero.jsx

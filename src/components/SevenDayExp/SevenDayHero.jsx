@@ -9,7 +9,7 @@ export default function SevenDayHero() {
       <div className="relative h-[640px] sm:h-[640px] lg:h-[750px]">
         {/* Premium first-paint fallback */}
         <div
-          className={`absolute inset-0 transition-opacity duration-700 ${
+          className={`absolute inset-0 transition-opacity duration-500 ${
             heroLoaded ? "opacity-0" : "opacity-100"
           }`}
           aria-hidden="true"
@@ -22,13 +22,13 @@ export default function SevenDayHero() {
           src={hero2}
           alt="Guests enjoying a week of unparalleled luxury"
           fetchPriority="high"
-          decoding="async"
           loading="eager"
+          decoding="async"
           sizes="100vw"
+          width={1920}
+          height={1080}
           onLoad={() => setHeroLoaded(true)}
-          className={`absolute inset-0 h-full w-full object-cover object-[55%_40%] transition-opacity duration-700 ${
-            heroLoaded ? "opacity-100" : "opacity-0"
-          }`}
+          className="absolute inset-0 h-full w-full object-cover object-[55%_40%]"
         />
 
         {/* Legibility tint */}
@@ -44,13 +44,13 @@ export default function SevenDayHero() {
                 data-aos-delay="500"
                 data-aos-duration="900"
               >
-                <span className="block font-semibold text-3xl sm:text-5xl lg:text-7xl">
+                <span className="block text-3xl font-semibold sm:text-5xl lg:text-7xl">
                   A WEEK OF
                 </span>
-                <span className="block font-semibold text-3xl sm:text-5xl lg:text-7xl">
+                <span className="block text-3xl font-semibold sm:text-5xl lg:text-7xl">
                   UNPARALLELED
                 </span>
-                <span className="block font-semibold text-3xl sm:text-5xl lg:text-7xl">
+                <span className="block text-3xl font-semibold sm:text-5xl lg:text-7xl">
                   LUXURY
                 </span>
               </h1>

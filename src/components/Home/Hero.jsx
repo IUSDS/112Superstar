@@ -5,10 +5,10 @@ export default function HeroSection() {
   const [heroLoaded, setHeroLoaded] = useState(false);
 
   return (
-    <section className="relative min-h-[110svh] w-full overflow-hidden text-white bg-[#0A2540]">
-      {/* Premium fallback first-paint layer */}
+    <section className="relative min-h-[110svh] w-full overflow-hidden bg-[#0A2540] text-white">
+      {/* First-paint fallback layer */}
       <div
-        className={`absolute inset-0 transition-opacity duration-700 ${
+        className={`absolute inset-0 transition-opacity duration-500 ${
           heroLoaded ? "opacity-0" : "opacity-100"
         }`}
         aria-hidden="true"
@@ -16,41 +16,43 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,201,63,0.18),transparent_35%),linear-gradient(180deg,#10253f_0%,#0A2540_45%,#071a2c_100%)]" />
       </div>
 
-      {/* Background image */}
+      {/* Actual hero image */}
       <picture className="absolute inset-0 h-full w-full">
         <source media="(max-width: 640px)" srcSet={mobilehero} />
         <img
           src={hero}
           alt="Superstar yacht cruising on open water"
           fetchPriority="high"
-          decoding="async"
           loading="eager"
+          decoding="async"
+          sizes="100vw"
           width={1920}
           height={1080}
           onLoad={() => setHeroLoaded(true)}
-          className={`h-full w-full object-cover transition-opacity duration-700 ${
-            heroLoaded ? "opacity-100" : "opacity-0"
-          }`}
+          className="h-full w-full object-cover"
         />
       </picture>
 
-      {/* Optional cinematic darkening for legibility */}
       <div className="absolute inset-0 bg-black/15" aria-hidden="true" />
 
-      {/* Content */}
       <div className="relative z-10 flex min-h-[100svh] flex-col">
         <div className="flex flex-1 items-center">
           <div className="mx-auto w-full max-w-8xl pb-24 sm:px-10 sm:pb-12 lg:px-16">
-            <div className="mx-auto max-w-2xl text-center sm:mx-0 sm:text-left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="900">
-              <p className="italic font-body text-2xl uppercase drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:text-[45px]">
+            <div
+              className="mx-auto max-w-2xl text-center sm:mx-0 sm:text-left"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="900"
+            >
+              <p className="font-body text-2xl uppercase italic drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:text-[45px]">
                 THE ULTIMATE
               </p>
 
-              <h1 className="italic font-heading text-6xl font-semibold uppercase leading-[0.6] drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:text-7xl lg:text-9xl">
+              <h1 className="font-heading text-6xl font-semibold uppercase italic leading-[0.6] drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:text-7xl lg:text-9xl">
                 SUPERSTAR
               </h1>
 
-              <p className="mt-2 italic font-body text-2xl uppercase drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:mt-3 sm:text-[45px]">
+              <p className="mt-2 font-body text-2xl uppercase italic drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)] sm:mt-3 sm:text-[45px]">
                 ON FLORIDA&apos;S GULF COAST
               </p>
             </div>

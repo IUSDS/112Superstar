@@ -9,7 +9,7 @@ export default function PricingHero() {
       <div className="relative h-[680px] sm:h-[660px] lg:h-[740px]">
         {/* Premium first-paint fallback */}
         <div
-          className={`absolute inset-0 transition-opacity duration-700 ${
+          className={`absolute inset-0 transition-opacity duration-500 ${
             heroLoaded ? "opacity-0" : "opacity-100"
           }`}
           aria-hidden="true"
@@ -22,15 +22,13 @@ export default function PricingHero() {
           src={pricingHero}
           alt="Choose Your Superstar Experience"
           fetchPriority="high"
-          decoding="async"
           loading="eager"
+          decoding="async"
           sizes="100vw"
           width={1920}
           height={1080}
           onLoad={() => setHeroLoaded(true)}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-            heroLoaded ? "opacity-100" : "opacity-0"
-          }`}
+          className="absolute inset-0 h-full w-full object-cover"
         />
 
         {/* Legibility tint */}
