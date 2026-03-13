@@ -176,7 +176,7 @@ function GalleryCoverflow({ items, autoMs = 3600 }) {
           onPointerDown={(e) => e.stopPropagation()}
           onClick={goPrev}
           aria-label="Previous image"
-          className="absolute cursor-pointer left-0 top-1/2 z-[120] -translate-y-1/2 rounded-full bg-white/90 p-2 shadow-[0_12px_30px_rgba(10,37,64,0.18)] ring-1 ring-black/5 backdrop-blur-sm transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A2540]/30 sm:left-2"
+          className="absolute left-2 top-1/2 z-[120] inline-flex min-h-12 min-w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 p-3 shadow-[0_12px_30px_rgba(10,37,64,0.18)] ring-1 ring-black/5 backdrop-blur-sm transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A2540]/30 sm:left-2"
         >
           <ChevronLeftIcon className="h-7 w-7 text-[#0A2540]" />
         </button>
@@ -187,64 +187,71 @@ function GalleryCoverflow({ items, autoMs = 3600 }) {
           onPointerDown={(e) => e.stopPropagation()}
           onClick={goNext}
           aria-label="Next image"
-          className="absolute cursor-pointer right-0 top-1/2 z-[120] -translate-y-1/2 rounded-full bg-white/90 p-2 shadow-[0_12px_30px_rgba(10,37,64,0.18)] ring-1 ring-black/5 backdrop-blur-sm transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A2540]/30 sm:right-2"
+          className="absolute right-2 top-1/2 z-[120] inline-flex min-h-12 min-w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 p-3 shadow-[0_12px_30px_rgba(10,37,64,0.18)] ring-1 ring-black/5 backdrop-blur-sm transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A2540]/30 sm:right-2"
         >
           <ChevronRightIcon className="h-7 w-7 text-[#0A2540]" />
         </button>
 
         {layout.map((s) => {
-          const item = items[s.i];
-          const isActive = s.i === active;
-          const origin =
-            s.hidden || s.d === 0 ? "center" : s.d < 0 ? "right center" : "left center";
+        const item = items[s.i];
+        const isActive = s.i === active;
+        const origin =
+          s.hidden || s.d === 0 ? "center" : s.d < 0 ? "right center" : "left center";
 
-          return (
-            <button
-              key={`${item.src}-${s.i}`}
-              type="button"
-              data-no-drag="true"
-              aria-label={item.alt}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={() => {
-                lastUserActionRef.current = Date.now();
-                setActive(s.i);
-              }}
+        const isMobileInactive = !isActive;
+        const canInteract = isActive;
+
+        return (
+          <button
+            key={`${item.src}-${s.i}`}
+            type="button"
+            data-no-drag="true"
+            aria-label={item.alt}
+            aria-hidden={s.hidden ? "true" : undefined}
+            tabIndex={canInteract ? 0 : -1}
+            disabled={!canInteract}
+            onPointerDown={(e) => e.stopPropagation()}
+            onClick={() => {
+              if (!canInteract) return;
+              lastUserActionRef.current = Date.now();
+              setActive(s.i);
+            }}
+            className={[
+              "absolute left-1/2 top-1/2",
+              "rounded-[6px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A2540]/30",
+              "transition-[transform,opacity,filter] duration-700",
+              "ease-[cubic-bezier(.2,.85,.2,1)] will-change-transform",
+              s.hidden ? "pointer-events-none" : "",
+              isMobileInactive ? "pointer-events-none sm:pointer-events-auto" : "",
+            ].join(" ")}
+            style={{
+              transform: `translate(-50%, -50%) translateX(${s.x}px) translateZ(${s.z}px) rotateY(${s.rot}deg) scale(${s.scale})`,
+              transformOrigin: origin,
+              opacity: s.opacity,
+              filter: `blur(${s.blur}px)`,
+              zIndex: isActive ? 80 : 70 - (s.ad || 0),
+            }}
+          >
+            <div
               className={[
-                "absolute left-1/2 top-1/2",
-                "rounded-[6px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A2540]/30",
-                "transition-[transform,opacity,filter] duration-700",
-                "ease-[cubic-bezier(.2,.85,.2,1)] will-change-transform",
-                s.hidden ? "pointer-events-none" : "",
+                "overflow-hidden bg-white",
+                "shadow-[0_22px_48px_rgba(10,37,64,0.22)]",
+                "ring-1 ring-black/5",
               ].join(" ")}
-              style={{
-                transform: `translate(-50%, -50%) translateX(${s.x}px) translateZ(${s.z}px) rotateY(${s.rot}deg) scale(${s.scale})`,
-                transformOrigin: origin,
-                opacity: s.opacity,
-                filter: `blur(${s.blur}px)`,
-                zIndex: isActive ? 80 : 70 - (s.ad || 0),
-              }}
             >
-              <div
-                className={[
-                  "overflow-hidden bg-white",
-                  "shadow-[0_22px_48px_rgba(10,37,64,0.22)]",
-                  "ring-1 ring-black/5",
-                ].join(" ")}
-              >
-                {/* Bigger images on mobile + large screens */}
-                <div className="aspect-[16/10] w-[360px] sm:w-[520px] lg:w-[680px]">
-                  <img
-                    src={item.src}
-                    alt={item.alt}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
+              <div className="aspect-[16/10] w-[360px] sm:w-[520px] lg:w-[680px]">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover"
+                />
               </div>
-            </button>
-          );
-        })}
+            </div>
+          </button>
+        );
+      })}
       </div>
 
       {/* Progress bar (kept) */}

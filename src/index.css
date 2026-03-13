@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Kanit";
+  src: url("/fonts/kanit.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Genos";
+  src: url("/fonts/genos.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 /* No whitespace around the app */
 html, body, #root {
   height: 100%;
@@ -19,7 +35,7 @@ body {
 
 /* Headings default to Genos */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Genos", system-ui, -apple-system, "Segoe UI", Robotofoo, Arial, sans-serif;
+  font-family: "Genos", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 /* Optional helper classes (use in className) */
