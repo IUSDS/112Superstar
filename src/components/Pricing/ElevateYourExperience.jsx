@@ -17,6 +17,8 @@ function WaterToyPackagesCard() {
 
   return (
     <CardShell className="p-6 sm:p-8 lg:p-12">
+      <div data-aos="fade-in" data-aos-delay="400" data-aos-duration="900">
+
       <h3 className="font-heading text-[26px] lg:text-[30px] font-semibold text-[#FFC93F]">
         Water Toy Packages
       </h3>
@@ -28,9 +30,10 @@ function WaterToyPackagesCard() {
       <p className="mt-5 max-w-[52ch] font-body text-[16px] lg:text-[17px] leading-[1.5] text-white/80">
         Elevate your day on the water with premium water toys built for thrill and exploration.
       </p>
+      </div>
 
       {/* Mobile-safe table: responsive price column so labels don't collapse */}
-      <div className="mt-10 border-t border-white/10">
+      <div className="mt-10 border-t border-white/10" data-aos="fade-in" data-aos-delay="400" data-aos-duration="900">
         {rows.map((r, i) => (
           <div
             key={`${r.label}-${i}`}
@@ -56,6 +59,8 @@ function WaterToyPackagesCard() {
 function UltimateBeachClubCard() {
   return (
     <CardShell className="p-6 sm:p-8 lg:p-12">
+      <div data-aos="fade-in" data-aos-delay="400" data-aos-duration="900">
+
       <h3 className="font-heading text-[26px] lg:text-[30px] font-semibold text-[#FFC93F]">
         Ultimate Beach Club
       </h3>
@@ -68,6 +73,7 @@ function UltimateBeachClubCard() {
         Transform your yacht into a private floating resort with a full Aquabana beach setup,
         expanded deck space, and seamless water access.
       </p>
+      </div>
     </CardShell>
   );
 }
@@ -75,6 +81,8 @@ function UltimateBeachClubCard() {
 function PrivateChefExperienceCard() {
   return (
     <CardShell className="p-6 sm:p-8 lg:p-12">
+      <div data-aos="fade-in" data-aos-delay="400" data-aos-duration="900">
+
       <h3 className="font-heading text-[26px] lg:text-[30px] font-semibold text-[#FFC93F]">
         Private Chef Experience
       </h3>
@@ -87,6 +95,7 @@ function PrivateChefExperienceCard() {
         Enjoy a fully customized gourmet menu prepared fresh onboard, tailored precisely to your
         preferences and dietary wishes.
       </p>
+      </div>
     </CardShell>
   );
 }
@@ -94,6 +103,8 @@ function PrivateChefExperienceCard() {
 function OffshoreAdventureCard() {
   return (
     <CardShell className="p-6 sm:p-8 lg:p-12">
+      <div data-aos="fade-in" data-aos-delay="400" data-aos-duration="900">
+
       <h3 className="font-heading text-[26px] lg:text-[30px] font-semibold text-[#FFC93F]">
         Ultimate Beach Club
       </h3>
@@ -106,6 +117,7 @@ function OffshoreAdventureCard() {
         A unique offshore activity featuring professional equipment, expert instruction, and
         eco-friendly materials for a one-of-a-kind adventure.
       </p>
+      </div>
     </CardShell>
   );
 }

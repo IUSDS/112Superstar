@@ -7,7 +7,7 @@ export default function OwnTheMoment() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
           {/* Headings (mobile: 1st, desktop: left/top) */}
           <div className="order-1 text-center lg:col-start-1 lg:order-1 lg:text-left">
-            <h2 className="text-[#0A2540]">
+            <h2 className="text-[#0A2540]"  data-aos="fade-right" data-aos-delay="100" data-aos-duration="900">
               <span className="font-body block text-[25px] sm:text-4xl lg:text-[42px]">
                 Own the Moment Aboard the
               </span>
@@ -25,7 +25,7 @@ export default function OwnTheMoment() {
               <div className="absolute -bottom-4 -right-4 h-full w-full border-2 border-[#0A2540] sm:-bottom-5 sm:-right-5" />
 
               {/* Main image */}
-              <div className="relative z-10 overflow-hidden bg-white">
+              <div className="relative z-10 overflow-hidden bg-white" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="900">
                 <img
                   src={ownthemoment}
                   alt="Superstar yacht cruising"
@@ -43,7 +43,7 @@ export default function OwnTheMoment() {
 
           {/* Description + CTA (mobile: 3rd, desktop: left/bottom) */}
           <div className="order-3 text-center lg:col-start-1 lg:order-3 lg:text-left">
-            <p className="mt-8 flex max-w-4xl items-center justify-center font-body text-xl leading-relaxed text-[#0A2540] opacity-70 sm:text-2xl lg:mt-0 lg:max-w-xl lg:justify-start lg:text-2xl">
+            <p className="mt-8 flex max-w-4xl items-center justify-center font-body text-xl leading-relaxed text-[#0A2540] opacity-70 sm:text-2xl lg:mt-0 lg:max-w-xl lg:justify-start lg:text-2xl" data-aos="fade-right" data-aos-delay="300" data-aos-duration="900">
               Indulge in unmatched exclusivity aboard Superstar, Florida&rsquo;s premier 112-ft
               superyacht where crystal waters, pristine beaches, and refined luxury create memories
               defined by space, balance, and ease.

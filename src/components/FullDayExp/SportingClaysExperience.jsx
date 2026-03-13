@@ -38,14 +38,14 @@ export default function SportingClaysExperience({
 
                 ].join(" ")}
               >
-                <p className="text-center md:text-left whitespace-pre-line font-heading text-3xl sm:text-3xl lg:text-4xl font-medium uppercase italic lg:ml-3">
+                <p className="text-center md:text-left whitespace-pre-line font-heading text-3xl sm:text-3xl lg:text-4xl font-medium uppercase italic lg:ml-3" data-aos="fade-in" data-aos-delay="500" data-aos-duration="900">
                   {leftTitle}
                 </p>
               </div>
 
               {/* Right heading */}
               <div className="text-center md:text-left w-full md:w-auto md:text-right md:col-start-2 md:row-start-1 md:justify-self-end">
-                <p className="whitespace-pre-line font-heading text-2xl sm:text-3xl lg:text-4xl ml-3 md:ml-0 font-semibold uppercase italic leading-[1.05] tracking-[0.14em] text-[#0A2540]">
+                <p className="whitespace-pre-line font-heading text-2xl sm:text-3xl lg:text-4xl ml-3 md:ml-0 font-semibold uppercase italic leading-[1.05] tracking-[0.14em] text-[#0A2540]" data-aos="fade-in" data-aos-delay="550" data-aos-duration="900">
                   {rightTitle}
                 </p>
               </div>
@@ -93,13 +93,13 @@ export default function SportingClaysExperience({
                   "rounded-[14px]",
                   "[clip-path:polygon(26px_0,100%_0,100%_calc(100%_-_26px),calc(100%_-_26px)_100%,0_100%,0_26px)]",
                   "sm:[clip-path:polygon(34px_0,100%_0,100%_calc(100%_-_34px),calc(100%_-_34px)_100%,0_100%,0_34px)]",
-                ].join(" ")}
+                ].join(" ")} 
               >
-                <p className="font-body text-xl sm:text-2xl lg:text-3xl font-medium uppercase italic  text-[#FFC93F] text-center">
+                <p className="font-body text-xl sm:text-2xl lg:text-3xl font-medium uppercase italic  text-[#FFC93F] text-center" data-aos="fade-in" data-aos-delay="500" data-aos-duration="900">
                   {c.title}
                 </p>
 
-                <p className="mt-4 font-body text-md sm:text-lg lg:text-xl font-normal italic leading-[1.65]  text-white/90 text-center">
+                <p className="mt-4 font-body text-md sm:text-lg lg:text-xl font-normal italic leading-[1.65]  text-white/90 text-center" data-aos="fade-in" data-aos-delay="500" data-aos-duration="900">
                   {c.text}
                 </p>
 

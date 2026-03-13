@@ -19,7 +19,7 @@ export default function GalleryToggle({ items }) {
             {data.slice(0, 4).map((it, idx) => (
               <article
                 key={`${it.label}-${idx}`}
-                className="h-full rounded-[22px] bg-[#0A2540] pb-[12px] sm:pb-[14px]"
+                className="h-full rounded-[22px] bg-[#0A2540] pb-[12px] sm:pb-[14px]" data-aos="flip-left" data-aos-delay="100" data-aos-duration="900"
               >
                 {/* Image (all 4 corners rounded) */}
                 <div className="overflow-hidden rounded-[18px] aspect-[5/6] w-full">

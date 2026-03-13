@@ -288,11 +288,13 @@ export default function GallerySection() {
       <div className="mx-auto max-w-[96rem] px-6 sm:px-10 lg:px-16">
         {/* SectionTop */}
         <div className="w-full bg-[#0A2540] px-6 py-[56px] sm:px-10 sm:py-[64px] lg:px-16 lg:py-[74px]">
-          <h2 className="text-center font-heading text-3xl font-semibold italic  text-[#FFC93F] sm:text-4xl md:text-5xl lg:text-6xl ">
+          <h2 className="text-center font-heading text-3xl font-semibold italic  text-[#FFC93F] sm:text-4xl md:text-5xl lg:text-6xl " data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
             WHERE GRANDEUR MEETS THE GULF
           </h2>
 
-          <p className="mx-auto mt-6 max-w-[62rem] text-center font-body text-[15px] text-white/90 sm:text-[17px] lg:text-2xl">
+          <p className="mx-auto mt-6 max-w-[62rem] text-center font-body text-[15px] text-white/90 sm:text-[17px] lg:text-2xl" data-aos="fade-in"
+     data-aos-delay="200" data-aos-duration="900">
             Superstar offers the scale and presence of a true superyacht, paired with a calm,
             composed onboard atmosphere. Perfect for hosting a celebration or just setting a slower
             rhythm to the day, every experience aboard is defined by space, balance, and an

@@ -54,13 +54,13 @@ export default function AquabanaPackage({
 
           <div className="relative z-10 flex min-h-[700px] flex-col px-5 pb-7 pt-4">
             <div>
-              <h2 className="whitespace-pre-line font-heading text-[23px] leading-[0.88] font-medium uppercase italic tracking-[0.02em] text-white">
+              <h2 className="whitespace-pre-line font-heading text-[23px] leading-[0.88] font-medium uppercase italic tracking-[0.02em] text-white" data-aos="flip-up" data-aos-delay="500" data-aos-duration="900">
                 {packageTitle}
               </h2>
             </div>
 
             <div className="ml-auto mt-[9.5rem] w-[63%] max-w-[220px] text-right text-white">
-              <p className="font-body text-[18px] leading-[0.92] font-medium">
+              <p className="font-body text-[18px] leading-[0.92] font-medium" data-aos="flip-up" data-aos-delay="500" data-aos-duration="900">
                 Available on{" "}
                 <span className="font-heading text-[24px] font-semibold italic">
                   8 Hour
@@ -112,7 +112,8 @@ export default function AquabanaPackage({
       {/* Desktop / tablet layout */}
       <div className="hidden md:block">
         <div className="mx-auto w-full max-w-[96rem] px-5 pt-8 sm:px-6 sm:pt-10 md:px-10 lg:px-16 lg:pt-12">
-          <p className="mx-auto max-w-[68rem] text-center font-heading text-[22px] leading-[1.14] font-semibold italic text-[#0A2540] sm:text-[24px] md:text-[26px] lg:text-[32px]">
+          <p className="mx-auto max-w-[68rem] text-center font-heading text-[22px] leading-[1.14] font-semibold italic text-[#0A2540] sm:text-[24px] md:text-[26px] lg:text-[32px]" data-aos="fade-up" data-aos-delay="500" data-aos-duration="900"
+>
             {description}
           </p>
 
@@ -139,12 +140,13 @@ export default function AquabanaPackage({
               <div className="absolute inset-0 bg-gradient-to-b from-black/8 via-transparent to-black/10" />
 
               <div className="absolute left-6 top-6 z-10 lg:left-8 lg:top-8">
-                <h2 className="whitespace-pre-line font-heading text-[36px] leading-[0.74] font-medium uppercase italic tracking-[0.02em] text-white lg:text-[50px]">
+                <h2 className="whitespace-pre-line font-heading text-[36px] leading-[0.74] font-medium uppercase italic tracking-[0.02em] text-white lg:text-[50px]" data-aos="flip-up" data-aos-delay="500" data-aos-duration="900"
+>
                   {packageTitle}
                 </h2>
               </div>
 
-              <div className="absolute bottom-6 right-6 z-10 w-[36%] max-w-[380px] text-right text-white lg:bottom-8 lg:right-8 lg:w-[34%] lg:max-w-[460px]">
+              <div className="absolute bottom-6 right-6 z-10 w-[36%] max-w-[380px] text-right text-white lg:bottom-8 lg:right-8 lg:w-[34%] lg:max-w-[460px]" data-aos="flip-up" data-aos-delay="500" data-aos-duration="900">
                 <p className="font-heading italic text-[34px] leading-[0.48] font-medium lg:text-[48px]">
                 EXCLUSIVE PRICING
                 </p>
@@ -171,7 +173,7 @@ export default function AquabanaPackage({
     <div className="h-full px-1 py-6 md:pl-8 lg:pl-0 lg:py-0">
       <div className="flex h-full flex-col">
         <div className="w-full bg-[#0A2540] px-4 py-2.5">
-          <p className="font-heading text-center text-[20px] leading-[1.12] font-medium uppercase italic text-[#FFC93F] lg:text-[28px]">
+          <p className="font-heading text-center text-[20px] leading-[1.12] font-medium uppercase italic text-[#FFC93F] lg:text-[28px]" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-duration="900">
             {rightTextHighlight}
           </p>
         </div>

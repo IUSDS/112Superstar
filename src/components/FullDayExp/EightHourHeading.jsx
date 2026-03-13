@@ -4,14 +4,14 @@ export default function EightHourHeading() {
       <div className="mx-auto max-w-full pt-12 pb-6 px-0 md:px-10 lg:px-16">
         <div className="flex flex-col gap-5 py-6 md:flex-row md:items-end md:justify-between md:gap-10 md:py-8">
           {/* Left heading */}
-          <p className="mx-auto  text-center font-body text-xl font-medium uppercase italic  text-[#0A2540] sm:text-2xl md:mx-0 md:max-w-none md:text-left md:text-3xl lg:text-4xl md:whitespace-nowrap">
+          <p className="mx-auto  text-center font-body text-xl font-medium uppercase italic  text-[#0A2540] sm:text-2xl md:mx-0 md:max-w-none md:text-left md:text-3xl lg:text-4xl md:whitespace-nowrap" data-aos="fade-in" data-aos-delay="100" data-aos-duration="900">
             ALL-IN ULTIMATE <br className="hidden md:block" /> FULL-DAY LUXURY PACKAGE 
           </p>
 
           {/* Right heading (blue panel only on mobile) */}
           <div className="w-full bg-[#0A2540] px-6 py-5 text-white md:w-auto md:bg-transparent md:p-0 md:text-[#0A2540]">
-            <div className="flex flex-col items-center text-center md:items-end md:text-right">
-              <div className="flex items-end gap-2 leading-none">
+            <div className="flex flex-col items-center text-center md:items-end md:text-right" data-aos="fade-right" data-aos-delay="300" data-aos-duration="900">
+              <div className="flex items-end gap-2 leading-none" >
                 <span className="font-body text-2xl itali font-normal  sm:text-3xl md:text-4xl lg:text-4xl">
                   The
                 </span>
