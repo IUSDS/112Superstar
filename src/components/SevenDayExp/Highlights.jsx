@@ -53,7 +53,7 @@ export default function Highlights({
           {/* Heading */}
           <div className="relative">
             <div className="flex items-center justify-center md:justify-start pt-8">
-              <p className="font-body text-3xl font-medium uppercase italic text-[#FFC93F] ml-0 md:ml-8 sm:text-5xl lg:text-5xl">
+              <p className="font-body text-3xl font-medium uppercase italic text-[#FFC93F] ml-0 md:ml-8 sm:text-5xl lg:text-5xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="900" >
                 {heading}
               </p>
 
@@ -126,11 +126,11 @@ export default function Highlights({
                       >
                         {/* Keep text width elegant, while borders span full column */}
                         <div className="md:max-w-[46rem]">
-                          <h3 className="font-heading text-2xl font-medium uppercase italic text-white sm:text-4xl lg:text-5xl">
+                          <h3 className="font-heading text-2xl font-medium uppercase italic text-white sm:text-4xl lg:text-5xl" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
                             {item.title}
                           </h3>
 
-                          <p className="mt-3 font-body text-md text-white/85 sm:text-xl lg:text-xl">
+                          <p className="mt-3 font-body text-md text-white/85 sm:text-xl lg:text-xl" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
                             {item.description}
                           </p>
                         </div>

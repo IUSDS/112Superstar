@@ -21,7 +21,8 @@ export default function FullDayExperience() {
       <div className="w-full bg-[#0A2540]">
         <div className="mx-auto max-w-full px-6 sm:px-10 lg:px-16">
           <div className="mx-auto max-w-full py-14 sm:py-14">
-            <p className="font-heading text-center text-3xl font-semibold italic text-[#FFC93F] sm:text-4xl md:text-5xl lg:text-6xl">
+            <p className="font-heading text-center text-3xl font-semibold italic text-[#FFC93F] sm:text-4xl md:text-5xl lg:text-6xl" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
               ALL-IN ULTIMATE FULL-DAY LUXURY PACKAGE
             </p>
             <p className="mt-5 font-body text-center text-md font-normal text-white/90 sm:text-2xl lg:text-2xl">
@@ -47,7 +48,8 @@ export default function FullDayExperience() {
                       loading="lazy"
                       decoding="async"
                       className="h-full w-full object-cover transition-transform duration-700 ease-out will-change-transform group-hover:scale-[1.06] motion-reduce:transition-none motion-reduce:transform-none"
-                    />
+                     data-aos="fade-in"
+     data-aos-delay="200" data-aos-duration="900"/>
                   </div>
                 </div>
               </div>
@@ -63,7 +65,8 @@ export default function FullDayExperience() {
                       loading="lazy"
                       decoding="async"
                       className="h-full w-full object-cover transition-transform duration-700 ease-out will-change-transform group-hover:scale-[1.06] motion-reduce:transition-none motion-reduce:transform-none"
-                    />
+                     data-aos="fade-in"
+     data-aos-delay="200" data-aos-duration="900"/>
                   </div>
 
                   <div className="group flex-[2] overflow-hidden rounded-lg">
@@ -73,7 +76,8 @@ export default function FullDayExperience() {
                       loading="lazy"
                       decoding="async"
                       className="h-full w-full object-cover transition-transform duration-700 ease-out will-change-transform group-hover:scale-[1.06] motion-reduce:transition-none motion-reduce:transform-none"
-                    />
+                     data-aos="fade-in"
+     data-aos-delay="300" data-aos-duration="900"/>
                   </div>
                 </div>
 
@@ -85,7 +89,8 @@ export default function FullDayExperience() {
                     loading="lazy"
                     decoding="async"
                     className="h-full w-full object-cover transition-transform duration-700 ease-out will-change-transform group-hover:scale-[1.06] motion-reduce:transition-none motion-reduce:transform-none"
-                  />
+                  data-aos="fade-in"
+     data-aos-delay="400" data-aos-duration="900"/>
                 </div>
               </div>
             </div>

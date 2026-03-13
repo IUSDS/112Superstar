@@ -21,7 +21,8 @@ export default function SevenDayExperience() {
               The 7-Day Superstar Experience
             </p>
 
-            <h2 className="mt-5 text-center font-heading text-4xl font-semibold italic text-[#FFC93F] sm:text-5xl lg:text-7xl">
+            <h2 className="mt-5 text-center font-heading text-4xl font-semibold italic text-[#FFC93F] sm:text-5xl lg:text-7xl" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
               A WEEK OF UNPARALLELED LUXURY
             </h2>
           </div>
@@ -39,7 +40,7 @@ export default function SevenDayExperience() {
                       alt="Guests enjoying the Superstar experience"
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover" data-aos="fade-in" data-aos-delay="200" data-aos-duration="900"
                     />
                   </div>
                 </div>
@@ -73,7 +74,7 @@ export default function SevenDayExperience() {
                       alt="On-deck gathering during sunset"
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover" data-aos="fade-in" data-aos-delay="300" data-aos-duration="900"
                     />
                   </div>
                 </div>
@@ -86,7 +87,7 @@ export default function SevenDayExperience() {
                       alt="Group photo aboard the yacht"
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover" data-aos="fade-in" data-aos-delay="400" data-aos-duration="900"
                     />
                   </div>
                 </div>

@@ -15,7 +15,7 @@ export default function SpecsSection() {
           {specs.map((item) => (
             <div
               key={item.label}
-              className="flex flex-col items-center justify-center text-center"
+              className="flex flex-col items-center justify-center text-center"  data-aos="fade-in" data-aos-duration="900"
             >
               <div className="font-heading text-[#FFC93F] text-3xl font-semibold leading-none sm:text-4xl">
                 {item.value}

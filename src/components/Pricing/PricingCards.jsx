@@ -131,15 +131,18 @@ export default function PricingCards() {
       <div className="mx-auto max-w-full px-6 sm:px-10 lg:px-16">
         {/* Heading */}
         <div className="text-center">
-          <p className="font-body text-lg text-white/80 sm:text-2xl">
+          <p className="font-body text-lg text-white/80 sm:text-2xl" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900"
+>
             CHARTER OPTIONS
           </p>
 
-          <h2 className="mt-2 font-heading text-4xl font-medium  text-[#FFC93F] sm:text-6xl lg:text-[62px]">
+          <h2 className="mt-2 font-heading text-4xl font-medium  text-[#FFC93F] sm:text-6xl lg:text-[62px]" data-aos="fade-up" data-aos-delay="500" data-aos-duration="900"
+>
             FLEXIBLE BOOKING PACKAGES
           </h2>
 
-          <p className="mx-auto mt-8 max-w-5xl font-body text-xl font-normal text-white/80 sm:text-2xl">
+          <p className="mx-auto mt-8 max-w-5xl font-body text-xl font-normal text-white/80 sm:text-2xl" data-aos="fade-up" data-aos-delay="600" data-aos-duration="900"
+>
             Choose the perfect charter duration for your celebration.
             <br  className="hidden sm:visible" />
             All packages include professional captain, crew, fuel, and premium amenities.

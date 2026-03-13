@@ -60,7 +60,7 @@ export default function AllInclusiveEscape({
         {displayItems.map((card, index) => (
           <article
             key={`${card.title}-${index}`}
-            className="group h-[30rem] overflow-hidden rounded-[18px] bg-white p-[14px] shadow-[0_12px_30px_rgba(10,37,64,0.10)] ring-1 ring-black/5 transition-transform duration-300 ease-out motion-safe:hover:-translate-y-1 sm:h-[31rem] md:h-[29rem] lg:h-[31.5rem]"
+            className="group h-[30rem] overflow-hidden rounded-[18px] bg-white p-[14px] shadow-[0_12px_30px_rgba(10,37,64,0.10)] ring-1 ring-black/5 transition-transform duration-300 ease-out motion-safe:hover:-translate-y-1 sm:h-[31rem] md:h-[29rem] lg:h-[31.5rem]" data-aos="fade-in" data-aos-delay="500" data-aos-duration="900"
           >
             <div className="flex h-full flex-col">
               <div className="relative h-[17.5rem] overflow-hidden rounded-[12px] sm:h-[18rem] md:h-[15rem] lg:h-[18.25rem]">

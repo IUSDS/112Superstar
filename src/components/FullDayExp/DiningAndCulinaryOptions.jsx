@@ -35,7 +35,7 @@ export default function DiningAndCulinaryOptions({
                   "md:col-start-1 md:row-start-1",
                 ].join(" ")}
               >
-                <p className="whitespace-pre-line font-heading text-3xl sm:text-3xl lg:text-4xl font-medium uppercase italic lg:ml-3">
+                <p className="whitespace-pre-line font-heading text-3xl sm:text-3xl lg:text-4xl font-medium uppercase italic lg:ml-3" data-aos="fade-in" data-aos-delay="500" data-aos-duration="900">
                   {leftTitle}
                 </p>
               </div>
@@ -83,11 +83,11 @@ export default function DiningAndCulinaryOptions({
                   "sm:[clip-path:polygon(34px_0,100%_0,100%_calc(100%_-_34px),calc(100%_-_34px)_100%,0_100%,0_34px)]",
                 ].join(" ")}
               >
-                <p className="font-body text-xl sm:text-2xl lg:text-3xl font-medium uppercase italic  text-[#FFC93F] text-center">
+                <p className="font-body text-xl sm:text-2xl lg:text-3xl font-medium uppercase italic  text-[#FFC93F] text-center" data-aos="fade-in" data-aos-delay="500" data-aos-duration="900">
                   {c.title}
                 </p>
 
-                <p className="mt-4 font-body text-md sm:text-lg lg:text-xl font-normal italic leading-[1.65]  text-white/90 text-center">
+                <p className="mt-4 font-body text-md sm:text-lg lg:text-xl font-normal italic leading-[1.65]  text-white/90 text-center" data-aos="fade-in" data-aos-delay="500" data-aos-duration="900">
                   {c.text}
                 </p>
 

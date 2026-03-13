@@ -98,7 +98,8 @@ export default function DetailCharterPricing({
           <div className="px-10 xl:px-14 py-14 xl:py-16">
             {/* Eyebrow */}
             <div className="text-center">
-              <p className="font-body text-5xl italic font-medium uppercase text-[#FFC93F]">
+              <p className="font-body text-5xl italic font-medium uppercase text-[#FFC93F]" data-aos="flip-up" data-aos-delay="500" data-aos-duration="900"
+>
                 {eyebrow}
               </p>
             </div>
@@ -132,15 +133,17 @@ export default function DetailCharterPricing({
                         </div>
                       ) : (
                         <div className="flex h-full min-h-[420px] xl:min-h-[520px] flex-col justify-center">
-                          <h3 className="font-heading text-[40px] xl:text-[48px] font-semibold leading-[1.05]">
+                          <h3 className="font-heading text-[40px] xl:text-[48px] font-semibold leading-[1.05]" data-aos="flip-up" data-aos-delay="300" data-aos-duration="900">
                             {item.title}
                           </h3>
 
-                          <p className="mt-4 font-body text-lg font-medium uppercase tracking-[0.22em] text-white/90">
+                          <p className="mt-4 font-body text-lg font-medium uppercase tracking-[0.22em] text-white/90" data-aos="fade-up" data-aos-delay="400" data-aos-duration="900"
+>
                             {item.durationPrice}
                           </p>
 
-                          <p className="mt-6 max-w-[36rem] font-body text-[16px] xl:text-[18px] leading-[1.45] text-white/80">
+                          <p className="mt-6 max-w-[36rem] font-body text-[16px] xl:text-[18px] leading-[1.45] text-white/80" data-aos="fade-up" data-aos-delay="500" data-aos-duration="900"
+>
                             {item.description}
                           </p>
 
@@ -151,7 +154,7 @@ export default function DetailCharterPricing({
                                 className="flex items-start gap-3 border-b border-white/10 py-3"
                               >
                                 <span className="mt-[11px] h-px w-4 bg-white/45" />
-                                <span className="font-body text-xl leading-[1.35] text-white/75">
+                                <span className="font-body text-xl leading-[1.35] text-white/75" data-aos="fade-right" data-aos-delay="600" data-aos-duration="900">
                                   {b}
                                 </span>
                               </li>
@@ -177,15 +180,15 @@ export default function DetailCharterPricing({
                     <div className={isReversed ? "order-2" : "order-2"}>
                       {isReversed ? (
                         <div className="flex h-full min-h-[420px] xl:min-h-[520px] flex-col justify-center">
-                          <h3 className="font-heading text-[40px] xl:text-[48px] font-semibold leading-[1.05]">
+                          <h3 className="font-heading text-[40px] xl:text-[48px] font-semibold leading-[1.05]" data-aos="flip-up" data-aos-delay="300" data-aos-duration="900">
                             {item.title}
                           </h3>
 
-                          <p className="mt-4 font-body text-lg font-medium uppercase tracking-[0.22em] text-white/90">
+                          <p className="mt-4 font-body text-lg font-medium uppercase tracking-[0.22em] text-white/90" data-aos="fade-up" data-aos-delay="400" data-aos-duration="900">
                             {item.durationPrice}
                           </p>
 
-                          <p className="mt-6 max-w-[36rem] font-body text-[16px] xl:text-[18px] leading-[1.45] text-white/80">
+                          <p className="mt-6 max-w-[36rem] font-body text-[16px] xl:text-[18px] leading-[1.45] text-white/80" data-aos="fade-up" data-aos-delay="500" data-aos-duration="900">
                             {item.description}
                           </p>
 
@@ -196,7 +199,7 @@ export default function DetailCharterPricing({
                                 className="flex items-start gap-3 border-b border-white/10 py-3"
                               >
                                 <span className="mt-[11px] h-px w-4 bg-white/45" />
-                                <span className="font-body text-xl leading-[1.35] text-white/75">
+                                <span className="font-body text-xl leading-[1.35] text-white/75" data-aos="fade-left" data-aos-delay="400" data-aos-duration="900">
                                   {b}
                                 </span>
                               </li>

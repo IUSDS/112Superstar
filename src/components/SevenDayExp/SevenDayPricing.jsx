@@ -100,7 +100,8 @@ export default function SevenDayPricing() {
           <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2">
             {/* LEFT: Pricing (spans 2 rows on desktop) */}
             <div className="flex flex-col items-center justify-center gap-7 border-[#D8DEE7] px-8 py-14 text-center sm:px-12 sm:py-16 lg:row-span-2 lg:border-r-2 lg:px-14 lg:py-20">
-              <div className="space-y-4">
+              <div className="space-y-4" data-aos="fade-in" data-aos-delay="100" data-aos-duration="900"
+>
                 <p className="font-heading text-5xl font-semibold tracking-[-0.02em] text-[#0A2540] sm:text-6xl lg:text-[64px]">
                   $67,999
                 </p>
