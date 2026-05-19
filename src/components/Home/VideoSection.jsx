@@ -1,8 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { hero } from "../../assets/images";
 
-const S3_VIDEO_URL =
-  "https://kyc-public-resources.s3.us-east-1.amazonaws.com/superstar_edited.mp4";
+const DESKTOP_VIDEO_URL =
+  "https://kyc-public-resources.s3.us-east-1.amazonaws.com/Desktop+KYC+Superstar.mp4";
+
+// TODO: replace with the mobile-optimized video URL when available.
+const MOBILE_VIDEO_URL =
+  "https://kyc-public-resources.s3.us-east-1.amazonaws.com/KYC+Superstar+(1).mp4";
+
+const MOBILE_BREAKPOINT = 640; // Tailwind `sm`
 
 
 export default function VideoSection() {
@@ -10,8 +16,22 @@ export default function VideoSection() {
   const videoRef = useRef(null);
 
   const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isReady, setIsReady] = useState(false);
   const [hasError, setHasError] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`).matches;
+  });
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
+    const onChange = (e) => setIsMobile(e.matches);
+    mql.addEventListener?.("change", onChange);
+    return () => mql.removeEventListener?.("change", onChange);
+  }, []);
+
+  const videoSrc = isMobile ? MOBILE_VIDEO_URL : DESKTOP_VIDEO_URL;
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -24,11 +44,25 @@ export default function VideoSection() {
           io.disconnect();
         }
       },
-      { root: null, rootMargin: "250px 0px", threshold: 0.01 }
+      { root: null, rootMargin: "1200px 0px", threshold: 0 }
     );
 
     io.observe(el);
-    return () => io.disconnect();
+
+    const idleStart = () => setShouldLoadVideo(true);
+    const idleId =
+      typeof window !== "undefined" && "requestIdleCallback" in window
+        ? window.requestIdleCallback(idleStart, { timeout: 1500 })
+        : window.setTimeout(idleStart, 1200);
+
+    return () => {
+      io.disconnect();
+      if (typeof window !== "undefined" && "cancelIdleCallback" in window) {
+        window.cancelIdleCallback(idleId);
+      } else {
+        window.clearTimeout(idleId);
+      }
+    };
   }, []);
 
   // If autoplay is blocked, keep poster visible (luxury ambient should never show controls)
@@ -48,8 +82,11 @@ export default function VideoSection() {
     const onCanPlay = () => tryPlay();
     v.addEventListener("canplay", onCanPlay);
 
+    // If the source URL changed (e.g., breakpoint flip), reload so the new <source> is fetched.
+    v.load();
+
     return () => v.removeEventListener("canplay", onCanPlay);
-  }, [shouldLoadVideo]);
+  }, [shouldLoadVideo, videoSrc]);
 
   return (
     <section ref={sectionRef} id="tour" className="w-full bg-white">
@@ -66,20 +103,20 @@ export default function VideoSection() {
 
         {/* Video (ambient, autoplay, no controls) */}
         <div className="mt-10 sm:mt-12">
-          <div className="mx-auto w-full max-w-6xl">
+          <div className="mx-auto w-full max-w-7xl">
             <div className="relative overflow-hidden rounded-2xl bg-[#7b8794] shadow-[0_18px_52px_rgba(10,37,64,0.10)]">
               {/* Bigger on mobile: tall viewport-driven height; desktop keeps wide cinematic aspect */}
-              <div className="relative h-[70svh] min-h-[420px] max-h-[640px] sm:h-auto sm:aspect-video md:aspect-[2.35/1]">
+              <div className="relative h-[78svh] min-h-[460px] max-h-[720px] sm:h-auto sm:aspect-video md:aspect-[2.2/1]">
                 {/* Poster overlay */}
                 <img
                   src={hero}
                   alt="Superstar yacht video preview"
-                  loading="lazy"
                   decoding="async"
+                  fetchpriority="high"
                   className={[
                     "absolute inset-0 h-full w-full object-cover",
-                    "transition-opacity duration-500 motion-reduce:transition-none",
-                    isPlaying && !hasError ? "opacity-0" : "opacity-100",
+                    "transition-opacity duration-300 motion-reduce:transition-none",
+                    isReady && !hasError ? "opacity-0" : "opacity-100",
                   ].join(" ")}
                 />
 
@@ -87,23 +124,24 @@ export default function VideoSection() {
                   ref={videoRef}
                   className={[
                     "absolute inset-0 h-full w-full object-cover",
-                    "transition-opacity duration-500 motion-reduce:transition-none",
-                    isPlaying && !hasError ? "opacity-100" : "opacity-0",
+                    "transition-opacity duration-300 motion-reduce:transition-none",
+                    isReady && !hasError ? "opacity-100" : "opacity-0",
                   ].join(" ")}
                   aria-label="Superstar yacht ambient video"
                   muted
                   loop
                   playsInline
                   autoPlay
-                  preload={shouldLoadVideo ? "metadata" : "none"}
+                  preload={shouldLoadVideo ? "auto" : "none"}
                   poster={hero}
-                  onPlaying={() => setIsPlaying(true)}
+                  onLoadedData={() => setIsReady(true)}
+                  onPlaying={() => setIsReady(true)}
                   onError={() => {
                     setHasError(true);
-                    setIsPlaying(false);
+                    setIsReady(false);
                   }}
                 >
-                  {shouldLoadVideo ? <source src={S3_VIDEO_URL} type="video/mp4" /> : null}
+                  {shouldLoadVideo ? <source src={videoSrc} type="video/mp4" /> : null}
                 </video>
               </div>
             </div>
