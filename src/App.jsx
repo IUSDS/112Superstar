@@ -9,6 +9,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import SevenDayExp from './pages/SevenDayExp';
 import FullDayExp from './pages/FullDayExp';
 import Pricing from './pages/Pricing';
+import Gallery from './pages/Gallery';
 import { SITE_URL } from './seo/siteMeta';
 import { SEO } from './seo/SEO';
 
@@ -63,6 +64,7 @@ function App() {
           <Route path="/seven-day-experience" element={<SevenDayExp />} />
           <Route path="/full-day-experience" element={<FullDayExp />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </main>
 

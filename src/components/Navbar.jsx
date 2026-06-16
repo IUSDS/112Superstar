@@ -5,6 +5,7 @@ const DEFAULT_LINKS = [
   { label: "Home", href: "/" },
   { label: "Seven Day Experience", href: "/seven-day-experience" },
   { label: "Full Day Experience", href: "/full-day-experience" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Pricing", href: "/pricing" },
 ];
 

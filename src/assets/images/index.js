@@ -53,12 +53,16 @@ import inclusiveEscapeSeabob from "./inclusiveEscapeSeabob.webp"
 import inclusiveEscapeBeachClub from "./inclusiveEscapeBeachClub.webp"
 import aquabanaPackage from "./aquabanaPackage.webp"
 import aquabanaPackageMobile from "./aquabanaPackageMobile.webp"
+import galleryHero from "./galleryHero.webp"
 
 
 export {
     //HeroSection Images for the Website
     hero,
     mobilehero,
+
+    //Gallery Page Hero
+    galleryHero,
 
     //hero for 7day page
     hero2,
