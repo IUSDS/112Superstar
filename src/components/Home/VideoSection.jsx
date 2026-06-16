@@ -1,37 +1,20 @@
 import { useEffect, useRef, useState } from "react";
 import { hero } from "../../assets/images";
 
-const DESKTOP_VIDEO_URL =
-  "https://kyc-public-resources.s3.us-east-1.amazonaws.com/Desktop+KYC+Superstar.mp4";
+const YOUTUBE_VIDEO_ID = "0YNkVyedU5k";
 
-// TODO: replace with the mobile-optimized video URL when available.
-const MOBILE_VIDEO_URL =
-  "https://kyc-public-resources.s3.us-east-1.amazonaws.com/KYC+Superstar+(1).mp4";
-
-const MOBILE_BREAKPOINT = 640; // Tailwind `sm`
-
+// Autoplay requires the video to be muted. `loop` needs `playlist` set to the
+// same id. `controls=0` + `modestbranding` keep the ambient, chrome-free look.
+const YOUTUBE_EMBED_URL =
+  `https://www.youtube-nocookie.com/embed/${YOUTUBE_VIDEO_ID}` +
+  `?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}` +
+  `&controls=0&playsinline=1&rel=0&modestbranding=1&disablekb=1`;
 
 export default function VideoSection() {
   const sectionRef = useRef(null);
-  const videoRef = useRef(null);
 
   const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
   const [isReady, setIsReady] = useState(false);
-  const [hasError, setHasError] = useState(false);
-  const [isMobile, setIsMobile] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`).matches;
-  });
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
-    const onChange = (e) => setIsMobile(e.matches);
-    mql.addEventListener?.("change", onChange);
-    return () => mql.removeEventListener?.("change", onChange);
-  }, []);
-
-  const videoSrc = isMobile ? MOBILE_VIDEO_URL : DESKTOP_VIDEO_URL;
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -65,29 +48,6 @@ export default function VideoSection() {
     };
   }, []);
 
-  // If autoplay is blocked, keep poster visible (luxury ambient should never show controls)
-  useEffect(() => {
-    if (!shouldLoadVideo) return;
-    const v = videoRef.current;
-    if (!v) return;
-
-    const tryPlay = async () => {
-      try {
-        await v.play();
-      } catch {
-        // Autoplay blocked; keep poster overlay and do not show controls
-      }
-    };
-
-    const onCanPlay = () => tryPlay();
-    v.addEventListener("canplay", onCanPlay);
-
-    // If the source URL changed (e.g., breakpoint flip), reload so the new <source> is fetched.
-    v.load();
-
-    return () => v.removeEventListener("canplay", onCanPlay);
-  }, [shouldLoadVideo, videoSrc]);
-
   return (
     <section ref={sectionRef} id="tour" className="w-full bg-white">
       <div className="mx-auto max-w-8xl px-6 py-0 sm:px-10 lg:px-16 lg:py-10">
@@ -116,33 +76,26 @@ export default function VideoSection() {
                   className={[
                     "absolute inset-0 h-full w-full object-cover",
                     "transition-opacity duration-300 motion-reduce:transition-none",
-                    isReady && !hasError ? "opacity-0" : "opacity-100",
+                    isReady ? "opacity-0" : "opacity-100",
                   ].join(" ")}
                 />
 
-                <video
-                  ref={videoRef}
-                  className={[
-                    "absolute inset-0 h-full w-full object-cover",
-                    "transition-opacity duration-300 motion-reduce:transition-none",
-                    isReady && !hasError ? "opacity-100" : "opacity-0",
-                  ].join(" ")}
-                  aria-label="Superstar yacht ambient video"
-                  muted
-                  loop
-                  playsInline
-                  autoPlay
-                  preload={shouldLoadVideo ? "auto" : "none"}
-                  poster={hero}
-                  onLoadedData={() => setIsReady(true)}
-                  onPlaying={() => setIsReady(true)}
-                  onError={() => {
-                    setHasError(true);
-                    setIsReady(false);
-                  }}
-                >
-                  {shouldLoadVideo ? <source src={videoSrc} type="video/mp4" /> : null}
-                </video>
+                {shouldLoadVideo ? (
+                  <iframe
+                    src={YOUTUBE_EMBED_URL}
+                    title="Superstar yacht ambient video"
+                    className={[
+                      "absolute inset-0 h-full w-full",
+                      "transition-opacity duration-300 motion-reduce:transition-none",
+                      isReady ? "opacity-100" : "opacity-0",
+                    ].join(" ")}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    onLoad={() => setIsReady(true)}
+                  />
+                ) : null}
               </div>
             </div>
           </div>
