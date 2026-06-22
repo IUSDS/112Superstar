@@ -3,6 +3,12 @@ import GalleryGrid from "../components/Gallery/GalleryGrid";
 import { SEO } from "../seo/SEO";
 import { SITE_URL } from "../seo/siteMeta";
 import { useLocation } from "react-router-dom";
+import gallery29 from "../assets/images/gallery29.webp";
+import gallery31 from "../assets/images/gallery31.webp";
+import gallery35 from "../assets/images/gallery35.webp";
+
+// A few representative exterior shots surfaced in the gallery's structured data.
+const featuredImages = [gallery29, gallery31, gallery35];
 
 const galleryJsonLd = {
   "@context": "https://schema.org",
@@ -12,6 +18,7 @@ const galleryJsonLd = {
   name: "112' Superstar Yacht Gallery",
   description:
     "Photo gallery of the 112' Superstar superyacht — exteriors, interiors, dining, and water toys across Florida's Gulf Coast.",
+  image: featuredImages.map((src) => `${SITE_URL}${src}`),
 };
 
 const Gallery = () => {
