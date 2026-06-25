@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState } from "react";
-import { galleryHero, mobilehero } from "../../assets/images";
+import { exterior3, mobilehero } from "../../assets/images";
 
 export default function GalleryHero() {
   const [heroLoaded, setHeroLoaded] = useState(false);
@@ -37,7 +37,7 @@ export default function GalleryHero() {
       <picture className="absolute inset-0 h-full w-full">
         <source media="(max-width: 640px)" srcSet={mobilehero} />
         <img
-          src={galleryHero}
+          src={exterior3}
           alt="Aerial view of the 112' Superstar superyacht on the water"
           fetchPriority="high"
           loading="eager"
@@ -46,16 +46,16 @@ export default function GalleryHero() {
           width={1920}
           height={1080}
           onLoad={() => setHeroLoaded(true)}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover scale-x-[-1]"
         />
       </picture>
 
       {/* Legibility tint */}
       <div className="absolute inset-0 bg-black/25" aria-hidden="true" />
 
-      {/* Heading block — vertically centered, left-aligned with a left margin */}
-      <div className="relative z-10 flex min-h-[100svh] flex-col justify-center">
-        <div className="mx-auto w-full max-w-[96rem] px-6 sm:px-10 lg:px-16">
+      {/* Heading block — bottom-left on mobile, centered on desktop */}
+      <div className="relative z-10 flex min-h-[100svh] flex-col justify-end sm:justify-center">
+        <div className="mx-auto w-full max-w-[96rem] px-6 pb-10 sm:px-10 sm:pb-0 lg:px-16">
           <div
             className="w-fit"
             data-aos="fade-up"

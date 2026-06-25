@@ -54,6 +54,7 @@ import inclusiveEscapeBeachClub from "./inclusiveEscapeBeachClub.webp"
 import aquabanaPackage from "./aquabanaPackage.webp"
 import aquabanaPackageMobile from "./aquabanaPackageMobile.webp"
 import galleryHero from "./galleryHero.webp"
+import exterior3 from "./exterior-3.webp"
 
 
 export {
@@ -63,6 +64,7 @@ export {
 
     //Gallery Page Hero
     galleryHero,
+    exterior3,
 
     //hero for 7day page
     hero2,
